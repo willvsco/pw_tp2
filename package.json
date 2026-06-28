@@ -1,0 +1,32 @@
+{
+  "name": "pw_2",
+  "version": "1.0.0",
+  "description": "Segundo trabalho pratico de pw",
+  "keywords": [
+    "pw",
+    "tp2"
+  ],
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch src --exec ts-node src/index.ts",
+    "deploy": "tsc",
+    "start:prod": "node build/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "envalid": "^8.2.0",
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.1",
+    "lorem-ipsum": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.0.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
