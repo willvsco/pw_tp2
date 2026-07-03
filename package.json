@@ -12,20 +12,28 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch src --exec ts-node src/index.ts",
-    "deploy": "tsc",
-    "start:prod": "node build/index.js"
+    "deploy": "sass src/scss/style.scss public/css/style.css && tsc",
+    "start:prod": "node build/index.js",
+    "sass": "sass src/scss/style.scss public/css/style.css",
+    "sass:watch": "sass --watch src/scss/style.scss public/css/style.css",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
   },
   "dependencies": {
+    "@prisma/client": "^7.8.0",
     "dotenv": "^17.4.2",
     "envalid": "^8.2.0",
     "express": "^5.2.1",
     "express-handlebars": "^9.0.1",
-    "lorem-ipsum": "^3.0.0"
+    "lorem-ipsum": "^3.0.0",
+    "prisma": "^7.8.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^26.0.1",
     "nodemon": "^3.1.14",
+    "sass": "^1.88.0",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }
