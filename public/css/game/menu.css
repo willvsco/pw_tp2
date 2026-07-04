@@ -1,0 +1,51 @@
+.menu{
+    position: absolute;
+    background-color: rgba(77, 64, 64, 0.473);
+    x: 0;
+    y: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#menuinicial{
+    background-color: rgb(22, 206, 114);
+    z-index:1;
+}
+.tituloMenu{
+    margin-top: -1vh;
+}
+.buttonMenu{
+    margin-top: 1vh;
+    background-color: aqua;
+    width: 10vw;
+    height: 5vh;
+}
+.jogobox{
+    background-color: black;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.inputs-nomes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.inputs-nomes input {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
+}

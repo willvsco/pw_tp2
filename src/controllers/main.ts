@@ -62,5 +62,9 @@ export function getHb4(req: Request, res: Response): void {
 }
 
 export function getHome(req: Request, res: Response): void {
-    res.send("Servidor funcionando!");
+    if (!req.session.user) {
+        res.redirect("/login");
+        return;
+    }
+    res.render("game", { layout: false, user: req.session.user });
 }

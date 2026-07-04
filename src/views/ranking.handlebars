@@ -1,0 +1,23 @@
+<h1>Ranking</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Jogador</th>
+            <th>Pontuação</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each ranking}}
+        <tr>
+            <td>{{add @index 1}}</td>
+            <td>{{fullName}}</td>
+            <td>{{score}}</td>
+        </tr>
+        {{else}}
+        <tr>
+            <td colspan="3" class="text-center">Nenhuma pontuação registrada.</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

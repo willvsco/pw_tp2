@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98vh;
+    min-width: 100px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.jogo{
+    position: relative;
+    overflow: hidden;
+    background-image: url("/assets/plano_de_fundo.png");
+    background-size: 100% 100%;
+    margin: 1vh 0.5vh 1vh 0.5vh;
+    height: 98vh;
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+
+}
